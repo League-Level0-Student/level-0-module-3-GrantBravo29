@@ -5,8 +5,21 @@ package _02_crazy_cat_lady;
 
 import java.net.URI;
 
+import javax.swing.JOptionPane;
+
 public class CrazyCatLady {
 	public static void main(String[] args) {
+		
+	String cats =	JOptionPane.showInputDialog("how many cats do you have"); 
+	int numCats= Integer.parseInt(cats);	
+		
+		
+		if(numCats>=3) {
+			JOptionPane.showInputDialog("you are a crazy cat lady");
+		}
+		
+		
+		
 		// 1. Ask the user how many cats they have
 
 		// 2. Convert their answer into an int
