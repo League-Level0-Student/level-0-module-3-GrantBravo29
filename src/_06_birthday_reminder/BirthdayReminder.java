@@ -16,18 +16,25 @@ public class BirthdayReminder {
 		String myBirthday = "September 22nd";
 
 		// 2. Find out which birthday the user wants and and store their response in a variable
-String hi = JOptionPane.showInputDialog("which birthday do you want?");
+
 		// 3. Print out what the user typed
 	
+String qw =	JOptionPane.showInputDialog	("Which birthday do you want to hear?");
 
-if(hi.equals(myBirthday)) {
+if(qw.equals("myBirthday")){
+
+JOptionPane.showMessageDialog(null, "September 22nd");
+}
+else if(qw.equals("dogsBirthday")) {
 	
-	JOptionPane.showMessageDialog(null, "September 22nd");
+	JOptionPane.showMessageDialog(null, "August 21th");
 	
 }
 	
+else if(qw.equals("dadsBirthday")){
+	JOptionPane.showMessageDialog(null, "May 13th");
 	
-	
+}
 	
 	
 	
