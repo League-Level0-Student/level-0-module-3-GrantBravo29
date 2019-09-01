@@ -1,4 +1,4 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
+ //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
 package _12_fizz_buzz;
@@ -29,12 +29,28 @@ import javax.swing.JOptionPane;
 public class FizzBuzz {
 public static void main(String[] args) {
 for (int i = 1; i < 21; i++) {
-	if(i%3==0) {
+	
+	 if(i%15==0) {
+		JOptionPane.showMessageDialog(null, "fizzbuzz");	
+			
+		}
+	
+	 else if(i%3==0) {
+		JOptionPane.showMessageDialog(null, "fizz");
+	
+	}
+	
+	else if(i%5==0) {
+	JOptionPane.showMessageDialog(null, "buzz");	
 		
 	}
-	JOptionPane.showMessageDialog(null, i   );	
-}	
+	
 
+	else {	
+		JOptionPane.showMessageDialog(null, i   );
+	}	
+
+}
 
 
 
