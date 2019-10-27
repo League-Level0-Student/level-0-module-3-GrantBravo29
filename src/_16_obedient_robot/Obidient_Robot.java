@@ -7,32 +7,42 @@ import org.jointheleague.graphical.robot.Robot;
 public class Obidient_Robot {
 	static Robot rob = new Robot();
 	public static void main(String[] args) {
-	
-if(JOptionPane.showInputDialog("What shape do you want to draw?") != null) {
-
-
-	
-	
-	
-	
-	
+	String shape = JOptionPane.showInputDialog("What shape do you want to draw?");
+if(shape.equals("circle")) {
+rob.hide();
+	rob.penDown();
+drawCircle();
 	
 }	
-	drawSquare();
+	
+else if(shape.equals("square")) {
+	
+drawSquare();	
+}
+
+
+{
+
+
+
+ if(shape.equals("triangle")) {
+
 drawTriangle();
-drawCircle();
 
 
 
-
+}}
 
 
 	}
-	static int e = 1655636;
+	
 public static void drawSquare() {
 
 rob.setSpeed(20);
-rob.setPenWidth(4);
+rob.sparkle();
+rob.hide();
+rob.setRandomPenColor();
+rob.setPenWidth(100);
 rob.hide();
 rob.penDown();
 
@@ -53,8 +63,8 @@ for (int i = 0; i < 3; i++) {
 public static void drawCircle() {
 	
 for (int i = 0; i < 360; i++) {
-	rob.turn(e);
-rob.move(e);
+	rob.turn(1);
+rob.move(1);
 }
 
 
